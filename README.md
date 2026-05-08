@@ -57,6 +57,17 @@ PlanSharp is an offline-first blueprint/document scanning MVP with React Native 
    npm run dev:web
    ```
 
+
+### If `vite: command not found`
+Run root install first so workspace binaries are available:
+```bash
+npm install
+```
+Then retry:
+```bash
+npm run dev:web
+```
+
 ## Environment
 Root `.env` values:
 - `MONGODB_URI`

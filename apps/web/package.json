@@ -2,8 +2,8 @@
   "name": "plansharp-web",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "npm exec vite",
+    "build": "tsc && npm exec vite build",
     "test": "echo 'no tests yet'",
     "lint": "eslint src --ext .ts,.tsx",
     "format": "prettier --write src"
