@@ -68,6 +68,17 @@ Then retry:
 npm run dev:web
 ```
 
+### If Vite HMR WebSocket fails (`failed to connect to websocket`)
+Set web HMR env values for your network/proxy and restart the dev server:
+```bash
+cp apps/web/.env.example apps/web/.env
+npm run dev:web
+```
+If using HTTPS tunneling/reverse proxy, set:
+- `VITE_HMR_PROTOCOL=wss`
+- `VITE_HMR_HOST=<public-hostname>`
+- `VITE_HMR_CLIENT_PORT=443`
+
 ## Environment
 Root `.env` values:
 - `MONGODB_URI`
